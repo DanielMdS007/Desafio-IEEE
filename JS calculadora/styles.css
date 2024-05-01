@@ -1,0 +1,86 @@
+:root{
+    --cor_numeros:#312762;
+    --cor_numeros_hover: #62a12f;
+    --cor_fundo_calculadora: #0099ffd3;
+}
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+  }
+  
+body{
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--cor_fundo_calculadora);
+    padding: 50px;
+}
+#calculadora{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 320px;
+    background-color: white;
+    box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.10);
+}
+#calculadora button{
+ height: 80px;
+ width: 80px;
+ transition: .1s linear;
+ color: var(--numeros_hover);
+}
+#botaoNumeros{
+    background-color:var(--cor_numeros) ;
+    color:white;
+}
+#botaoNumeros:Hover{
+    background-color: var(--cor_numeros_hover);
+}
+
+#calculadora form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+
+}
+#calculadora form #display{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 0 20px 15px 0;
+    width: 100%;
+    height: 110px;
+    color: black;
+    font-size:1.5rem;
+    background-color: white;
+}
+#calculadora form #gridBotoes{
+    display: flex;
+    align-items: baseline;
+}
+
+#calculadora form #gridBotoes #botaoOperadores{
+    display: flex;
+    flex-direction: column;
+}
+#calculadora form #gridBotoes #numerosArticle{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#botaoOperadores{
+    align-items: center;
+    justify-content: center;
+}
+#botaoOperadores:Hover{
+    background-color: var(--cor_numeros_hover);
+}
+

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="teste.js"></script>
+    <title>Calculadora do Ramo</title>
+</head>
+<body>
+    <div id="calculadora">
+        <form action="" onsubmit="calcular(event)">
+            <span id="display"></span>
+            <section id="gridBotoes">
+                <article id="numerosArticle">
+                <button type="button" id="botaoOperadores" onclick="apagar()">C</button>
+                <button type="button" id="botaoNumerosOff" > </button>
+                <button type="button" id="botaoNumerosOff" > </button>
+                <button type="button" id="botaoNumeros" onclick="escreverNumero('7')">7</button>
+                <button type="button" id="botaoNumeros" onclick="escreverNumero('8')">8</button>
+                <button type="button" id="botaoNumeros" onclick="escreverNumero('9')">9</button>
+                <button type="button" id="botaoNumeros" onclick="escreverNumero('4')">4</button>
+                <button type="button" id="botaoNumeros" onclick="escreverNumero('5')">5</button>
+                <button type="button" id="botaoNumeros" onclick="escreverNumero('6')">6</button>
+                <button type="button" id="botaoNumeros" onclick="escreverNumero('1')">1</button>
+                <button type="button" id="botaoNumeros" onclick="escreverNumero('2')">2</button>
+                <button type="button" id="botaoNumeros" onclick="escreverNumero('3')">3</button>
+          
+                <button type="button" id="botaoNumerosOff" > </button>
+                <button type="button" id="botaoNumeros" onclick="escreverNumero('0')">0</button>
+                <button type="button" id="botaoNumerosOff" > </button>
+                </article>
+                
+                <article id="calculosArticle">
+                    <button  type="button" id="botaoOperadores" onclick="selecionarOperador('+')">+</button>
+                    <button  type="button" id="botaoOperadores" onclick="selecionarOperador('-')">-</button>
+                    <button  type="button" id="botaoOperadores" onclick="selecionarOperador('/')">/</button>
+                    <button  type="button" id="botaoOperadores" onclick="selecionarOperador('*')">*</button>
+                    <button  type="button" id="botaoOperadores" onclick="selecionarOperador('^')">^</button>         
+                    <button  type="button" id="botaoOperadores" onclick="selecionarOperador('√')">√</button>      
+                    <button id="botaoOperadores" onclick="calcular()">=</button>
+                </article>
+            </section>
+        
+            
+        </form>
+    </div>  
+</body>
+</html>
